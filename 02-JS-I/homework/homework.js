@@ -44,7 +44,9 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   
-  return y-x;
+  var result = x - y;
+
+  return result;
 }
 
 function multiplica(x, y) {
@@ -83,9 +85,8 @@ function tienenMismaLongitud(str1, str2) {
 
   if(long1==long2){
     return true;
-  }else{
-    return false;
   }
+  return false;
   
 }
 
@@ -95,9 +96,8 @@ function menosQueNoventa(num) {
   // Tu código:
   if(num<90){
     return true;
-  }else{
-    return false;
   }
+  return false;
   
 }
 
@@ -128,9 +128,8 @@ function esPar(num) {
   
   if(num%2==0){
     return true;
-  }else{
-    return false;
   }
+  return false;
 }
 
 function esImpar(num) {
@@ -139,9 +138,8 @@ function esImpar(num) {
   // Tu código:
   if(num%2==0){
     return false;
-  }else{
-    return true;
   }
+  return true;
 }
 
 function elevarAlCuadrado(num) {
@@ -183,7 +181,7 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
-  return Math.round(Math.random() * (1 - 0) + 0);
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -206,8 +204,8 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-
-  return srt + '!';
+     
+  return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
@@ -215,7 +213,8 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
 
-  return nombre + ' ' + henry;
+  var name = nombre + ' ' + apellido;
+  return name;
   
 }
 
@@ -223,7 +222,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola ' + nombre+'!';
+  var solucion = 'Hola ' + nombre +'!';
+  return solucion;
   
 }
 
@@ -265,6 +265,19 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+
+  var vocal = ['a','e','i','o','u'];
+  
+  if(letra.length>1){ 
+  return 'Dato incorrecto';
+  }
+  
+  if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+    return 'Es vocal';
+
+  } else
+  return 'Dato incorrecto'
+  
 
    
 }
