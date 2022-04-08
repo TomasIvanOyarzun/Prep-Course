@@ -81,9 +81,9 @@ function tieneEmail(usuario) {
   // Tu código:
   if(usuario.email!= undefined){
     return true;
-  }else{
-    return false;
   }
+    return false;
+  
 }
 
 
@@ -101,10 +101,10 @@ function tienePropiedad(objeto, propiedad) {
     return true;
   }
     
-  else{
+  
     return false;
 
-  }
+ 
     
 }
 
@@ -116,9 +116,9 @@ function verificarPassword(usuario, password) {
 
    if(usuario.password === password){
      return true;
-   }else{
-     return false;
    }
+     return false;
+   
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -182,16 +182,16 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
 
-   var precioYdescuento = function calcular(){
+
+
+   producto.calcularPrecioDescuento = function calcular(){
 
     var total = producto.precio - (producto.precio * producto.porcentajeDeDescuento);
 
     return total;
     
 
-   }  
-
-   producto.calcularPrecioDescuento = precioYdescuento;
+   };
 
    return producto;
 

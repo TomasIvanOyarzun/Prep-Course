@@ -8,28 +8,55 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
 
+text-align:center;
+display: flex;
+
+
 }
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
+#ejercicioDos{
+    display: none;
+}
 
 
 
 /* Ejercicio 3: */
 
+
 /* Acá va tu código */
+#ejercicioTres{
+    margin-top: 100px;
+    margin-left: 200px;
+}
 
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
+#ejercicioCuatro{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
 
 
 
 /* Ejercicio 5: */
+
+#ejercicioCinco{
+    
+    display: flex;
+	flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 /* Acá va tu código */
 

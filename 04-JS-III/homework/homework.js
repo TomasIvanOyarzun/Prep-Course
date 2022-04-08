@@ -331,7 +331,7 @@ function continueStatement(numero) {
          
          continue
        }
-       numero = numero + 2
+       numero +=2
 
        array.push(numero)
   }

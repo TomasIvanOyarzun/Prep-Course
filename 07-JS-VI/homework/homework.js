@@ -50,9 +50,7 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
 
-   array.forEach(function(element, i){
-     cb(element)
-   });
+  array.forEach(element => cb(element));
 
 }
 
