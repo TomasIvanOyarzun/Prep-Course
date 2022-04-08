@@ -7,11 +7,10 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
-text-align:center;
-display: flex;
-
-
+    
+    display: block;
+    text-align: center;
+    
 }
 
 
@@ -19,6 +18,7 @@ display: flex;
 
 /* Acá va tu código */
 #ejercicioDos{
+    
     display: none;
 }
 
@@ -29,8 +29,10 @@ display: flex;
 
 /* Acá va tu código */
 #ejercicioTres{
-    margin-top: 100px;
-    margin-left: 200px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+
 }
 
 
@@ -40,8 +42,9 @@ display: flex;
 /* Acá va tu código */
 #ejercicioCuatro{
     position: fixed;
-    left: 0;
-    top: 0;
+    top: 0px;
+    left: 0px;
+
 }
 
 
@@ -50,11 +53,11 @@ display: flex;
 /* Ejercicio 5: */
 
 #ejercicioCinco{
-    
     display: flex;
-	flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row-reverse;
+   
 
 }
 
@@ -63,3 +66,13 @@ display: flex;
 
 
 /* Ejercicio 6. */
+
+#elementoUno{
+    position: relative;
+    top: 200px;
+}
+
+#ejercicioSiete{
+    display: flex;
+    align-items: center;
+}
